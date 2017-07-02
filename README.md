@@ -7,17 +7,24 @@ The FileScanner Actor receives a Scan message, and process all files in a given 
 The FileParser Actor receives the scanned file as Parse message, then read the file and send three event messages to the Aggregator (Start, Line and End)
 
 The Aggregator Actor receives the three event messages, from the FileParser actor such as Start, Line and End, then process it accordingly with the requirements:
+
 	When receives Start event, just log the aggregator initiate.  
+	
 	When receives Line event, take a word count for each line and sum it for further need.
+	
 	When receives End event, print the words count for the file.
+	
 	
 When all files get processed, finish the ActorSystem instance
  
 Technology used in this project
 
 JDK 1.8
+
 Maven 4.0
+
 Akka API 2.5.3
+
 Log4j 1.2.17
 
 how to deploy/execute:

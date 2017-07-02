@@ -28,7 +28,7 @@ how to deploy/execute:
 4. run mvn clean package -> this will compile and build the project
 5. to run the application do the follow:
    java -jar target/LogProcessor-akka-0.0.1-executable.jar src/test/logs -> the expected results should be similar to the below outputs,
-   
+
 20:29:04.737 INFO  [main][com.m800.akka.actors.FileScanner] Initiating the ActorSystem 'logProcessor'
 20:29:05.826 INFO  [main][com.m800.akka.actors.FileScanner] Sending the path : src/test/logs to be scan by FileScanner actor!
 20:29:05.828 INFO  [logProcessor-akka.actor.default-dispatcher-6][com.m800.akka.actors.FileScanner] Scanning files into directory :src\test\logs
@@ -40,7 +40,6 @@ Words count of file : src\test\logs\test1.log is :13
 Words count of file : src\test\logs\test2.log is :26
 Words count of file : src\test\logs\test3.log is :65
 Words count of file : src\test\logs\test4.log is :117
-
 
 
 Thanks, and enjoy!

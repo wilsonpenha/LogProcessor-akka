@@ -30,15 +30,25 @@ how to deploy/execute:
    java -jar target/LogProcessor-akka-0.0.1-executable.jar src/test/logs -> the expected results should be similar to the below outputs,
 
 20:29:04.737 INFO  [main][com.m800.akka.actors.FileScanner] Initiating the ActorSystem 'logProcessor'
+
 20:29:05.826 INFO  [main][com.m800.akka.actors.FileScanner] Sending the path : src/test/logs to be scan by FileScanner actor!
+
 20:29:05.828 INFO  [logProcessor-akka.actor.default-dispatcher-6][com.m800.akka.actors.FileScanner] Scanning files into directory :src\test\logs
+
 20:29:05.838 INFO  [logProcessor-akka.actor.default-dispatcher-3][com.m800.akka.actors.FileParser] Parsing file from directory :src\test\logs\test1.log
+
 20:29:05.839 INFO  [logProcessor-akka.actor.default-dispatcher-5][com.m800.akka.actors.FileParser] Parsing file from directory :src\test\logs\test3.log
+
 20:29:05.839 INFO  [logProcessor-akka.actor.default-dispatcher-2][com.m800.akka.actors.FileParser] Parsing file from directory :src\test\logs\test2.log
+
 20:29:05.841 INFO  [logProcessor-akka.actor.default-dispatcher-4][com.m800.akka.actors.FileParser] Parsing file from directory :src\test\logs\test4.log
+
 Words count of file : src\test\logs\test1.log is :13
+
 Words count of file : src\test\logs\test2.log is :26
+
 Words count of file : src\test\logs\test3.log is :65
+
 Words count of file : src\test\logs\test4.log is :117
 
 

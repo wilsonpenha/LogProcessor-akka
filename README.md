@@ -7,9 +7,9 @@ The FileScanner Actor receives a Scan message, and process all files in a given 
 The FileParser Actor receives the scanned file as Parse message, then read the file and send three event messages to the Aggregator (Start, Line and End)
 
 The Aggregator Actor receives the three event messages, from the FileParser actor such as Start, Line and End, then process it accordingly with the requirements:
-	When receives Start event, just log the aggregator initiates.  
+	When receives Start event, just log the aggregator initiate.  
 	When receives Line event, take a word count for each line and sum it for further need.
-	When receives End event, print the word count for the file.
+	When receives End event, print the words count for the file.
 	
 When all files get processed, finish the ActorSystem instance
  
@@ -23,9 +23,10 @@ Log4j 1.2.17
 how to deploy/execute:
 
 1. setup your Maven repository and application
-2. go to the project folder LogProcessor-akka
-2. run mvn clean package -> this will compile and build the project
-3. to run the application do the follow:
+2. download and extract the LogProcessor-akka project
+3. then go to the project folder LogProcessor-akka
+4. run mvn clean package -> this will compile and build the project
+5. to run the application do the follow:
    java -jar target/LogProcessor-akka-0.0.1-executable.jar src/test/logs -> the expected results should be similar to the below outputs,
    
 <font size=1>

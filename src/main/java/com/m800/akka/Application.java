@@ -3,11 +3,7 @@ package com.m800.akka;
 import org.apache.log4j.Logger;
 
 import com.m800.akka.actors.FileScanner;
-<<<<<<< HEAD
 import com.m800.akka.messages.Scan;
-=======
-import com.m800.akka.actors.messages.Scan;
->>>>>>> 1ef49ac685c8113b4012390dbba91d16c237d2b3
 
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;

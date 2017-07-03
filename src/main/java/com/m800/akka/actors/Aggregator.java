@@ -4,9 +4,15 @@ import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
+<<<<<<< HEAD
 import com.m800.akka.messages.End;
 import com.m800.akka.messages.Line;
 import com.m800.akka.messages.Start;
+=======
+import com.m800.akka.actors.messages.End;
+import com.m800.akka.actors.messages.Line;
+import com.m800.akka.actors.messages.Start;
+>>>>>>> 1ef49ac685c8113b4012390dbba91d16c237d2b3
 
 import akka.actor.UntypedAbstractActor;
 
@@ -44,7 +50,11 @@ public class Aggregator extends UntypedAbstractActor {
             
             String path = end.getFilePath().toString();
             
+<<<<<<< HEAD
             System.out.println("Words count of file : " + path + " is " + wordCount.get(path) + " words");
+=======
+            System.out.println("Words count of file : " + path + " is " + wordCount.get(path) + "words");
+>>>>>>> 1ef49ac685c8113b4012390dbba91d16c237d2b3
             
             if (count >= numberOfFiles) {
                 getContext().system().terminate();

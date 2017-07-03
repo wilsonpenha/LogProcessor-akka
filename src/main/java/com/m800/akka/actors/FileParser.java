@@ -9,10 +9,17 @@ import java.nio.file.Paths;
 
 import org.apache.log4j.Logger;
 
+<<<<<<< HEAD
 import com.m800.akka.messages.End;
 import com.m800.akka.messages.Line;
 import com.m800.akka.messages.Parse;
 import com.m800.akka.messages.Start;
+=======
+import com.m800.akka.actors.messages.End;
+import com.m800.akka.actors.messages.Line;
+import com.m800.akka.actors.messages.Parse;
+import com.m800.akka.actors.messages.Start;
+>>>>>>> 1ef49ac685c8113b4012390dbba91d16c237d2b3
 
 import akka.actor.ActorRef;
 import akka.actor.UntypedAbstractActor;

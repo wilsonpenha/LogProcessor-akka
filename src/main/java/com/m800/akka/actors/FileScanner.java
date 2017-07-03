@@ -4,13 +4,8 @@ import java.io.File;
 
 import org.apache.log4j.Logger;
 
-<<<<<<< HEAD
 import com.m800.akka.messages.Parse;
 import com.m800.akka.messages.Scan;
-=======
-import com.m800.akka.actors.messages.Parse;
-import com.m800.akka.actors.messages.Scan;
->>>>>>> 1ef49ac685c8113b4012390dbba91d16c237d2b3
 
 import akka.actor.ActorRef;
 import akka.actor.Props;
